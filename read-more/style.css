@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    position:relative;
+    top:0;
+    left:0px;
+}
+nav{
+    margin:0px 10px;
+    display:flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items:center;
+
+    /* creating a glassmorphism nav bar with blur effect/glass effect*/
+    
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius:20px;
+    box-shadow: 0 8px 32px 0  rgba(0,0,0,0.4);
+}
+nav img{
+    width:40px;
+    border-radius: 10px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 0px 25px;
+    position:relative;
+}
+.nav-links ul li a{
+    color:black;
+    text-decoration:none;
+    font-size:12px; 
+}
+
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background: #f44336;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
+.heading-container{
+    margin-left:50px;
+    margin-bottom:50px;
+
+}
+.heading-container h1{
+    font-size:60px;
+    margin:50px;
+    margin-bottom:10px;
+    margin-left:0;
+
+}
+.line{
+    background:#f44336;
+    width:140px;
+    height:6px;
+    border-radius:20px;
+    margin-bottom:27px;
+
+}
+.heading-container img{
+    float:left;
+    margin:30px;
+    margin-left:0;
+    width:800px;
+}
+.heading-container p{
+    margin-bottom:25px;
+}
+span{
+    font-weight:bolder;
+}
+.last{
+    font-size:20px;
+}
+h2{
+    margin-top: 100px;
+    margin-bottom:10px;
+    font-size:45px;
+}
+.line2{
+    background:#f44336;
+    width:80px;
+    height:4px;
+    border-radius:20px;
+    margin-bottom:27px;
+
+}
+.read-more{
+    font-size:15px;
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:25px;
+    background-color:crimson;
+    color:white;
+    margin-top:100px;
+    box-shadow:-4px 4px 4px rgba(0,0,0,0.8);
+    transition: 0.3s ease;
+    margin-bottom:50px;
+}
+.read-more:hover{
+    background-color:rgb(159, 12, 41);
+}

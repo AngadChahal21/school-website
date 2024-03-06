@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+.header{
+    position:relative;
+    top:0;
+    left:0px;
+}
+nav{
+    margin:0px 10px;
+    display:flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items:center;
+
+    /* creating a glassmorphism nav bar with blur effect/glass effect*/
+    
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius:20px;
+    box-shadow: 0 8px 32px 0  rgba(0,0,0,0.4);
+}
+nav img{
+    width:40px;
+    border-radius: 10px;
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+.nav-links ul li{
+    list-style:none;
+    display:inline-block;
+    padding: 0px 25px;
+    position:relative;
+}
+.nav-links ul li a{
+    color:black;
+    text-decoration:none;
+    font-size:12px; 
+}
+
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background: #f44336;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+}
+
+.about-section{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#f1f1f1;
+}
+
+.about{
+    background: url(./about-pic.png) no-repeat left;
+    background-size:70%;
+    background-color:#f1f1f1;
+    overflow:hidden;
+    padding:100px 0;
+}
+.container{
+    width:50%;
+    float:right;
+    background-color:#fdfdfd;
+    padding:50px;
+    margin-right:40px;
+    box-shadow:-30px 30px 20px rgba(0,0,0,0.4)
+}
+.container h1{
+    font-size:35px;
+    font-weight:900;
+    margin-bottom:15px;
+}
+.container span{
+    font-weight:bolder;
+}
+.text{
+    margin-bottom:25px;
+}
+.container .read-more{
+    padding:10px 20px;
+    text-decoration:none;
+    border-radius:25px;
+    background-color:crimson;
+    color:white;
+    margin-top:100px;
+    box-shadow:-4px 4px 4px rgba(0,0,0,0.8);
+    transition: 0.3s ease;
+}
+.container .read-more:hover{
+    background-color:rgb(159, 12, 41);
+}
